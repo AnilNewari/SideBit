@@ -19,7 +19,33 @@
         <activity
             android:name=".Notification"
             android:label="@string/title_activity_notification"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".Account"
+            android:label="@string/title_activity_account"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".LikeApp"
+            android:label="@string/title_activity_like_app"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".MessMenu"
+            android:label="@string/title_activity_mess_menu"
+            android:parentActivityName=".MainActivity"
+            >
         </activity>
     </application>
 

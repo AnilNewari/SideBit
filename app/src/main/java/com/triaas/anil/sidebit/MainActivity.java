@@ -14,6 +14,8 @@ import android.text.SpannableString;
 import android.text.style.TypefaceSpan;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -33,6 +35,18 @@ public class MainActivity extends ActionBarActivity {
 
         Typeface type = Typeface.createFromAsset(getAssets(),"CrescentRegular.ttf");
         TextView messtext= (TextView) findViewById(R.id.mess);
+        ImageView messimg=(ImageView) findViewById(R.id.messmenu);
+
+        messimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, MessMenu.class);
+                startActivity(i);
+
+
+            }
+        });
+
         //messtext.setTypeface(type);
         //some changes done by me
     }
@@ -50,20 +64,44 @@ public class MainActivity extends ActionBarActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-
-            return true;
+        switch (item.getItemId()) {
+            case R.id.about:
+                About();
+                return true;
+            case R.id.account:
+                Account();
+                return true;
+            case R.id.help:
+                Help();
+            case R.id.like:
+                LikeApp();
+            case R.id.notification:
+                Notification();
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        else if(id==R.id.notification){
-            Notification();
-            return true;
 
-        }
 
-        return super.onOptionsItemSelected(item);
+    }
+    private void About(){
+        Intent i = new Intent(MainActivity.this, About.class);
+        startActivity(i);
+
+    }
+    private void Account(){
+        Intent i = new Intent(MainActivity.this, Account.class);
+        startActivity(i);
+
+    }
+    private void Help(){
+        Intent i = new Intent(MainActivity.this, Help.class);
+        startActivity(i);
+
+    }
+    private void LikeApp(){
+        Intent i = new Intent(MainActivity.this, LikeApp.class);
+        startActivity(i);
+
     }
     private void Notification(){
         Intent i = new Intent(MainActivity.this, Notification.class);
