@@ -34,7 +34,7 @@ public class MainActivity extends ActionBarActivity {
         Typeface type = Typeface.createFromAsset(getAssets(),"CrescentRegular.ttf");
         TextView messtext= (TextView) findViewById(R.id.mess);
         //messtext.setTypeface(type);
-        //some changes done by me
+        //changes success
     }
 
 
