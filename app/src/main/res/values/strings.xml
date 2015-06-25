@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SideBit</string>
+
+    <string name="hello_world">Welcome to SideBit!</string>
+    <string name="action_settings">Settings</string>
+    <string name="messmenu">MessMenu</string>
+    <string name="citycinema">CityCinema</string>
+    <string name="campusdeals">CampusDeals</string>
+    <string name="campusupdates">CampusEvents</string>
+    <string name="jaipurevents">JaipurEvents</string>
+    <string name="photography">Photography</string>
+    <string name="library">Library</string>
+    <string name="pyp">PYP</string>
+    <string name="menu">Menu</string>
+    <string name="like">Like App</string>
+    <string name="placementquiz">PlacementQuiz</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="notify">Your Notification !</string>
+</resources>

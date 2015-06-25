@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity"
+ >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginBottom="40dp"
+       android:gravity="center_vertical"
+       >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        >
+
+            <ImageView
+            android:id="@+id/messmenu"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:contentDescription="@null"
+            android:src="@drawable/messmenu"
+            android:clickable="true"/>
+
+
+            <ImageView
+                android:id="@+id/citycinema"
+                android:layout_width="@dimen/logowidth"
+                android:layout_height="@dimen/logoheight"
+                android:layout_marginLeft="@dimen/logosleftmargin"
+                android:contentDescription="@null"
+                android:src="@drawable/citycinema"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/cmpusdeals"
+                android:layout_width="@dimen/logowidth"
+                android:layout_height="@dimen/logoheight"
+                android:layout_marginLeft="@dimen/logosleftmargin"
+                android:contentDescription="@null"
+                android:src="@drawable/campusdeals"
+                android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/textlogomargin"
+        android:layout_marginLeft="35dp"
+        >
+        <TextView
+            android:id="@+id/mess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="@string/messmenu"
+
+
+            android:textColor="@color/blue2"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/textleftmargin"
+            android:text="@string/citycinema"
+            android:textColor="@color/blue2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="34dp"
+            android:text="@string/campusdeals"
+            android:textColor="@color/blue2"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/campusupdates"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:contentDescription="@null"
+            android:src="@drawable/campusupdates"
+            android:clickable="true"/>
+
+
+        <ImageView
+            android:id="@+id/jaipurevents"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:layout_marginLeft="@dimen/logosleftmargin"
+            android:contentDescription="@null"
+            android:src="@drawable/jaipurevents"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/photography"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:layout_marginLeft="@dimen/logosleftmargin"
+            android:contentDescription="@null"
+            android:src="@drawable/photography"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/textlogomargin"
+        android:layout_marginLeft="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/campusupdates"
+            android:textColor="@color/blue2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:text="@string/jaipurevents"
+            android:textColor="@color/blue2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:text="@string/photography"
+            android:textColor="@color/blue2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/library"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:contentDescription="@null"
+            android:src="@drawable/library"
+            android:clickable="true"/>
+
+
+        <ImageView
+            android:id="@+id/pyp"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:layout_marginLeft="@dimen/logosleftmargin"
+            android:contentDescription="@null"
+            android:src="@drawable/pyp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/placementquiz"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:layout_marginLeft="@dimen/logosleftmargin"
+            android:contentDescription="@null"
+            android:src="@drawable/placementquiz"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/textlogomargin"
+        android:layout_marginLeft="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue2"
+            android:text="@string/library"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue2"
+            android:layout_marginLeft="78dp"
+            android:text="@string/pyp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue2"
+            android:layout_marginLeft="55dp"
+            android:text="@string/placementquiz"
+            />
+
+    </LinearLayout>
+   </LinearLayout>
+    </LinearLayout>
+
+
