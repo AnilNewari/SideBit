@@ -24,7 +24,7 @@ public class Notification extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        // get action bar
+        // get action barkibar
         //ActionBar actionBar = getActionBar();
 
         // Enabling Up / Back navigation
