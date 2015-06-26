@@ -48,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
         });
 
         //messtext.setTypeface(type);
-        //some changes done by me
+        //changes success
     }
 
 
@@ -56,6 +56,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
         return true;
     }
 
