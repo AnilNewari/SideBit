@@ -7,14 +7,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MessMenu extends ActionBarActivity {
+public class CampusDeals extends ActionBarActivity {
 
     private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mess_menu);
+        setContentView(R.layout.activity_campus_deals);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
@@ -22,15 +22,13 @@ public class MessMenu extends ActionBarActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_mess_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_campud_deals, menu);
         return true;
     }
 

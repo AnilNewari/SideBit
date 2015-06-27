@@ -44,8 +44,17 @@
         <activity
             android:name=".MessMenu"
             android:label="@string/title_activity_mess_menu"
-            android:parentActivityName=".MainActivity"
-            >
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".CityCinema"
+            android:label="@string/title_activity_city_cinema"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".CampusDeals"
+            android:label="@string/title_activity_campus_deals"
+            android:parentActivityName=".MainActivity">
         </activity>
     </application>
 

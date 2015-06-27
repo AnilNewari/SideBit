@@ -2,6 +2,7 @@ package com.triaas.anil.sidebit;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
@@ -12,11 +13,13 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.TypefaceSpan;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -28,6 +31,12 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Log.e("before conversion", imageInByte.toString());
+        // Inserting Contacts
+        //Log.d("Insert: ", "Inserting ..");
+
+        //Toast.makeText(getApplicationContext(), "Your Image Saved Successfully!", Toast.LENGTH_SHORT).show();
+
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
@@ -35,12 +44,37 @@ public class MainActivity extends ActionBarActivity {
 
         Typeface type = Typeface.createFromAsset(getAssets(),"CrescentRegular.ttf");
         TextView messtext= (TextView) findViewById(R.id.mess);
+
+        final Context context = this;
         ImageView messimg=(ImageView) findViewById(R.id.messmenu);
+        ImageView cc=(ImageView) findViewById(R.id.citycinema);
+        ImageView cd=(ImageView) findViewById(R.id.cmpusdeals);
 
         messimg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, MessMenu.class);
+                //Context context = getContext();
+                Intent i = new Intent(context, MessMenu.class);
+                startActivity(i);
+
+
+            }
+        });
+       cc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Context context = getContext();
+                Intent i = new Intent(context, CityCinema.class);
+                startActivity(i);
+
+
+            }
+        });
+        cd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Context context = getContext();
+                Intent i = new Intent(context, CampusDeals.class);
                 startActivity(i);
 
 
